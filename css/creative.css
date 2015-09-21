@@ -208,6 +208,12 @@ header .intro h3 {
     font-weight: bold;
 }
 
+@media(max-width: 767px) {
+    header .intro h3 {
+        visibility: hidden;
+    }
+}
+
 .devicon {
     font-size: 5em;
 }
@@ -251,18 +257,18 @@ header .header-content .header-content-inner p {
         transform: translateY(-50%);
     }
 
-    header .header-content .header-content-inner {
+/*    header .header-content .header-content-inner {
         margin-right: auto;
         margin-left: auto;
         max-width: 1000px;
-    }
+    }*/
 
-    header .header-content .header-content-inner p {
+/*    header .header-content .header-content-inner p {
         margin-right: auto;
         margin-left: auto;
         max-width: 80%;
         font-size: 18px;
-    }
+    }*/
 }
 
 .section-heading {
@@ -300,7 +306,6 @@ header .header-content .header-content-inner p {
     text-align: center;
     color: #fff;
     opacity: 0;
-/*    background: rgba(240,95,64,.9);*/
     background: rgba(245, 135, 122, .9);
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
