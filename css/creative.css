@@ -121,6 +121,8 @@ aside {
     background-color: transparent;
 }
 
+
+
 @media(min-width:768px) {
     .navbar-default {
         border-color: rgba(255,255,255,.3);
@@ -192,7 +194,7 @@ header .intro {
     position: relative;
     width: 100%;
     text-align: center;
-    padding: 100px 100px;
+    padding: 100px 50px;
 /*    background-color: red;*/
 }
 
@@ -209,6 +211,11 @@ header .intro h3 {
 }
 
 @media(max-width: 767px) {
+    header .intro h1 {
+        margin-top: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
     header .intro h3 {
         visibility: hidden;
     }
@@ -242,6 +249,13 @@ header .header-content .header-content-inner p {
     font-weight: 300;
     color: rgba(255,255,255,.7);
 }*/
+
+@media(max-width: 360px){
+    header .intro {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
 
 @media(min-width:768px) {
     header {
@@ -317,6 +331,8 @@ header .header-content .header-content-inner p {
     top: 50%;
     width: 100%;
     text-align: center;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
     transform: translateY(-50%);
 }
 
